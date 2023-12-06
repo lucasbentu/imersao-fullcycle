@@ -16,3 +16,11 @@ Desenvolveremo uma plataforma de investimentos com Home Broker:
 - Next.js
 - Apache Kafka
 - SSE ( Server Sent Events )
+
+### Comandos úteis
+
+- ```go mod tidy```
+  - Usado para garantir que o arquivo go.mod reflita precisamente as dependências do código presente
+
+- ```go test ./...```
+  - Usado para rodar os testes do Go.
