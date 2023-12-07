@@ -25,25 +25,29 @@ Desenvolveremo uma plataforma de investimentos com Home Broker:
 - ```go test ./...```
   - Usado para rodar os testes do Go.
 
+- ```go run cmd/trade/main.go```
+  - Usado para rodar o Projeto.
+_____
+
 Exemplo de msg pra venda:
 
-  {
-    "order_id": "1",
-    "investor_id": "Mari",
-    "asset_id": "asset1",
-    "current_shares": 10,
-    "shares": 5,
-    "price": 5.0,
-    "order_type": "SELL"
-  }
+    {
+      "order_id": "1",
+      "investor_id": "Mari",
+      "asset_id": "asset1",
+      "current_shares": 10,
+      "shares": 5,
+      "price": 5.0,
+      "order_type": "SELL"
+    }
 
 Exemplo de msg pra compra:
 
-  {
-    "investor_id": "Celia",
-    "asset_id": "asset1",
-    "current_shares": 0,
-    "shares": 5,
-    "price": 5.0,
-    "order_type": "BUY"
-  }
+    {
+      "investor_id": "Celia",
+      "asset_id": "asset1",
+      "current_shares": 0,
+      "shares": 5,
+      "price": 5.0,
+      "order_type": "BUY"
+    }
