@@ -19,6 +19,10 @@ Desenvolveremo uma plataforma de investimentos com Home Broker:
 
 ### Comandos úteis
 
+
+- ```cd go```
+  - Entra na pasta do Projet em Golang
+
 - ```go mod tidy```
   - Usado para garantir que o arquivo go.mod reflita precisamente as dependências do código presente
 
@@ -28,6 +32,22 @@ Desenvolveremo uma plataforma de investimentos com Home Broker:
 - ```go run cmd/trade/main.go```
   - Usado para rodar o Projeto.
 _____
+
+### Kafka control-center
+
+Ainda no repositório do go, inicie o docker compose
+
+- ```docker-compose up -d```
+  - Usado para iniciar o Docker Compose
+  - Iniciará na rota _http://localhost:9021_
+_____
+
+Vá em Topics e crie dois tópicos, 
+
+- Topic name: **input**
+- Topic name: **output**
+
+Entre no Topic input, clique em _Messages_ e realize a Venda e a Compra das ações.
 
 Exemplo de msg pra venda:
 
@@ -51,3 +71,5 @@ Exemplo de msg pra compra:
       "price": 5.0,
       "order_type": "BUY"
     }
+
+_____
